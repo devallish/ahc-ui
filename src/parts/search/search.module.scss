@@ -1,0 +1,12 @@
+.outer_container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "input button";
+  column-gap: 0.5rem;
+}
+.input_container {
+  grid-area: input;
+}
+.button_container {
+  grid-area: button;
+}

@@ -1,0 +1,16 @@
+@import "../../styling/colours";
+@import "../../styling/typpgraphy";
+@import "../../styling/spacings";
+
+.input {
+  padding: $small-padding;
+  margin: 2px;
+  border: 1px solid $heading-light-colour;
+  font-family: $base-font-family;
+  font-size: $data-entry-font-size;
+  width: 100%;
+}
+.input:focus {
+  border: 3px solid $highlight-colour;
+  margin: 0;
+}

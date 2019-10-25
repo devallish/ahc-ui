@@ -1,0 +1,18 @@
+@import "../../styling/colours";
+@import "../../styling/typpgraphy";
+@import "../../styling/spacings";
+
+.base_button {
+  padding: $small-padding;
+  margin: 2px;
+  border: 1px solid $heading-light-colour;
+  font-family: $base-font-family;
+  font-size: $data-entry-font-size;
+}
+.standard_button {
+  @extend .base_button;
+  background-color: transparent;
+}
+.primary_button {
+  @extend .base_button;
+}

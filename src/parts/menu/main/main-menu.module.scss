@@ -2,17 +2,16 @@
 @import "../../../styling/spacings";
 
 .link {
-  background-color: $heading-colour;
-  color: $heading-text-colour;
+  background-color: $menu-link-colour;
+  color: $menu-link-text-colour;
   display: block;
   padding: $general-padding;
   text-decoration: none;
 }
+a.link:hover {
+  background-color: $menu-link-hover-colour;
+  //color: $menu-link-hover-text-colour;
+}
 .active_link {
-  background-color: $highlight-colour;
-  color: $hightlight-text-colour;
+  background-color: $menu-link-active-colour;
 }
-nav {
-  background-color: orange;
-}
-

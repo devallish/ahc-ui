@@ -1,3 +1,8 @@
 $general-vertical-padding: 1rem;
 $general-horizontal-padding: 2rem;
 $general-padding: $general-vertical-padding $general-horizontal-padding;
+
+$small-vertical-padding: $general-vertical-padding / 2;
+$small-horizontal-padding: $general-horizontal-padding / 2;
+
+$small-padding: $small-vertical-padding $small-horizontal-padding;
