@@ -1,0 +1,10 @@
+@import "./styling/typpgraphy";
+@import "./styling/colours";
+
+body {
+  margin: 0;
+  background-color: $main-colour;
+  color: $main-text-colour;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}

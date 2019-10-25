@@ -1,0 +1,18 @@
+@import "../../../styling/colours";
+@import "../../../styling/spacings";
+
+.link {
+  background-color: $heading-colour;
+  color: $heading-text-colour;
+  display: block;
+  padding: $general-padding;
+  text-decoration: none;
+}
+.active_link {
+  background-color: $highlight-colour;
+  color: $hightlight-text-colour;
+}
+nav {
+  background-color: orange;
+}
+

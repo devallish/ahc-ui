@@ -1,0 +1,33 @@
+@import "../../styling/spacings";
+
+.outer_container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "content" "footer";
+}
+
+.base_padded_container {
+  padding: $general-padding;
+}
+.header_container {
+  @extend .base_padded_container;
+  grid-area: header;
+}
+.content_container {
+  
+  grid-area: content;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "menu page";
+}
+.main_menu_container {
+  grid-area: menu;
+}
+.page_container {
+  grid-area: page;
+}
+
+.footer_container {
+  @extend .base_padded_container;
+  grid-area: footer;
+}
