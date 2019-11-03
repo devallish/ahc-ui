@@ -1,0 +1,30 @@
+@import "../../styling/colours";
+@import "../../styling/spacings";
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  thead {
+    background-color: $table-header-colour;
+  }
+  tbody {
+    tr:hover {
+      background-color: $table-row-hover-colour;
+    }
+  }
+  th {
+    padding: $small-vertical-padding;
+    text-align: left;
+    font-weight: normal;
+  }
+  td {
+    padding: $small-vertical-padding;
+  }
+
+  .data_row {
+    background-color: $table-row-colour;
+  }
+  .alt_data_row {
+    background-color: $table-row-alt-colour;
+  }
+}

@@ -2,7 +2,9 @@ $main-colour: rgb(216, 216, 216);
 $main-text-colour: rgb(26, 26, 26);
 
 $highlight-colour: orange;
-$hightlight-text-colour: white;
+$highlight-text-colour: white;
+
+$highlight-light-colour: lighten($highlight-colour, 10%);
 
 $heading-colour: rgb(54, 54, 54);
 $heading-text-colour: white;
@@ -15,3 +17,11 @@ $menu-link-active-colour: $highlight-colour;
 $menu-link-hover-colour: darken($highlight-colour, 5%);
 $menu-link-hover-text-colour: $main-text-colour;
 $menu-link-text-colour: $heading-text-colour;
+
+$input-colour: white;
+$input-text-colour: $main-text-colour;
+
+$table-header-colour: $highlight-colour;
+$table-row-colour: white;
+$table-row-alt-colour: lighten($heading-light-colour, 20%);
+$table-row-hover-colour: $highlight-light-colour;

@@ -15,7 +15,7 @@ const Input = (props: InputProps) => {
     if (props.inputType){
       setInputType(props.inputType);
     }
-  }, [])
+  }, [props.inputType])
   return <input className={styles.input} type={inputType} onChange={props.onChange} onBlur={props.onBlur} />;
 };
 export default Input;

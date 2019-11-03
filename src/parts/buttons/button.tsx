@@ -6,15 +6,15 @@ export type NamedStyles = "Standard" | "Primary";
 interface ButtonProps {
   onClickHandler: (event: React.MouseEvent<HTMLButtonElement>) => void;
   children: React.ReactNode;
-  style?: NamedStyles
+  namedStyle?: NamedStyles
 }
 const Button = (props: ButtonProps) => {
   const [styleClassName, setStyleClassName] = useState(styles.standard_button);
   useLayoutEffect(() => {
-    if (props.style && props.style === "Primary"){
+    if (props.namedStyle && props.namedStyle === "Primary"){
       setStyleClassName(styles.primary_button);
     }
-  }, [])
+  }, [props.namedStyle])
   return <button className={styleClassName} onClick={props.onClickHandler}>{props.children}</button>
 };
 

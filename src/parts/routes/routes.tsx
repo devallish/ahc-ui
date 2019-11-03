@@ -1,16 +1,19 @@
 import React from "react";
 import { Switch, Route } from "react-router";
-import { useRoutesContext } from "../../shared/routes/routes-context";
+import RouteInfo from "../../shared/routes/route-info";
 
-const Router = () => {
-  const routing = useRoutesContext();
+interface RoutesProps{
+  routes: RouteInfo[]
+}
+
+const Routes = (props: RoutesProps) => {
   return (
     <Switch>
-      {routing.map((route, index) => (
+      {props.routes.map((route, index) => (
         <Route key={index} path={route.path} exact={route.exact} component={route.component} />
       ))}
     </Switch>
   );
 };
 
-export default Router;
+export default Routes;

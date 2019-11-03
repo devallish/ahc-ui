@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./header.module.scss";
 
-const Header = () => {
+interface HeaderProps {
+  children: React.ReactNode;
+}
+
+const Header = (props: HeaderProps) => {
   return <div className={styles.outer_container}>
     <div className={styles.title_container}>
-      <h1>Animal Health Care - Administration</h1>
+      {props.children}
     </div>
   </div>;
 };

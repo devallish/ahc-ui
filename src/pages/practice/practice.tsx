@@ -1,14 +1,16 @@
 import React from "react";
 import styles from "./practice.module.scss";
-import Search from "../../parts/search/search";
+import { practiceRoutes } from "./routes/practice-routes";
+import Routes from "../../parts/routes/routes";
 
 const Practice = () => {
+
   return <div className={styles.outer_container}>
     <div className={styles.header_container}>
-      <h2>Pets and Vets - Andover Clinic</h2>
+      
     </div>
-    <div className={styles.search_container}>
-      <Search />
+    <div className={styles.routes_container}>
+      <Routes routes={practiceRoutes} />
     </div>
   </div>
 };

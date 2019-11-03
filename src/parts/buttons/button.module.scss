@@ -9,10 +9,18 @@
   font-family: $base-font-family;
   font-size: $data-entry-font-size;
 }
+.base_button:focus {
+  border: 3px solid $highlight-colour;
+  margin: 0;
+}
+.base_button:hover {
+  background-color: $menu-link-hover-colour;
+}
 .standard_button {
   @extend .base_button;
   background-color: transparent;
 }
 .primary_button {
   @extend .base_button;
+  background-color: $highlight-light-colour;
 }

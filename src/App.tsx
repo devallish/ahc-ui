@@ -1,14 +1,11 @@
 import React from "react";
 import styles from "./app.module.scss";
-import Layout from "./parts/layout/layout";
-import RoutesContextProvider from "./shared/routes/routes-context-provider";
+import SiteLayout from "./parts/layouts/site/site-layout";
 
 const App: React.FC = () => {
   return (
     <div className={styles.app}>
-      <RoutesContextProvider>
-        <Layout />
-      </RoutesContextProvider>
+        <SiteLayout />
     </div>
   );
 };
