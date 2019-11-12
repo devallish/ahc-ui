@@ -19,6 +19,11 @@
   }
   td {
     padding: $small-vertical-padding;
+    a {
+      display: block;
+      text-decoration: none;
+      color: $table-text-colour;
+    }
   }
 
   .data_row {

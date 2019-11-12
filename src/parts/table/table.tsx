@@ -1,6 +1,7 @@
 import React from 'react'
 import { PropertyInfo } from "../../services/practice-service"
 import styles from "./table.module.scss";
+import { NavLink } from 'react-router-dom';
 
 interface TableProps{
   columns: PropertyInfo[],
@@ -16,10 +17,10 @@ const Table = (props: TableProps) => {
           </tr>
         </thead>
         <tbody>
-          {props.rows.map((row, index) => 
+          {props.rows.map((row, index) =>
             <tr key={index} className={ index % 2 === 0 ? styles.data_row : styles.alt_data_row } >
               {props.columns.map((column, index) => 
-                <td key={index}>{row[column.name]}</td>)}
+                <td key={index}><NavLink to={`/practice/${row.id}`}>{row[column.name]}</NavLink></td>)}
             </tr>
            )}
         </tbody>
